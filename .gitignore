@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.ipynb
+temp.ipynb
+valid_label_sar_pairs.txt
+processed_dataset/
+sen12flood/
+01_match_label_sar_pairs.py
+02_preprocess_sar_label_pairs.py
+03_train_model.py
+README.md
+.vscode/
