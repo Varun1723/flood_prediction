@@ -188,22 +188,6 @@ python 03_train_model.py --evaluate --checkpoint models/best_model.pth --data_di
 
 **GA**: Typical hyperparameters encoded for GA include learning rate, dropout rate, weight decay, optimizer type, batch size, scheduler parameters, and some architecture choices (e.g., number of filters). Fitness is computed as a validation metric (e.g., F1 score or IoU). `deap` is recommended for GA operators (selection, crossover, mutation).
 
-## Results & Artifacts
-
-Saved in the repository:
-
-* `models/`: `.pth` files and best checkpoints
-* `visualizations/`: training & validation curves, confusion matrices, ROC curves, per-sample prediction visualizations
-* `processed_dataset/`: `.npy` arrays produced by preprocessing
-
-Include experiment logs and a short `results_summary.md` if you want to track experiment configurations and their scores.
-
-## Reproducibility
-
-* Seed RNGs (numpy, torch, random) at the start of training and GA runs.
-* Save exact command line used with each experiment (recommended: `train_logs/` or a JSON config file saved alongside checkpoints).
-* Pin package versions in `requirements.txt` if reproducibility is essential.
-
 ## License
 
 This project is released under the **MIT License** — see `LICENSE` for details.
